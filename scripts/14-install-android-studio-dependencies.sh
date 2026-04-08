@@ -132,6 +132,10 @@ elif [ "$DISTRO" = "arch" ]; then
     install_package "libxtst" "X11 test extension"
     install_package "libglvnd" "OpenGL vendor-neutral dispatch library"
 
+    show_title "Installing keychain for android studio "
+    install_package "gnome-keyring" "Installing gnome keyring for android studio authentication (specific to hyprland)"
+    install_package "libsecret" "Another library needed for androdi studio authentication (specific to Hyprland)"
+
     # --- JDK ---
     # show_title "Install open JDK"
     # install_package "jdk-openjdk" "Java Development Kit (OpenJDK)"
