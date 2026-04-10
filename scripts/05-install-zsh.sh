@@ -104,7 +104,7 @@ install_package "fzf" "FZF: A command-line fuzzy finder"
 # Installing zoxide
 install_package "zoxide" "Zoxide: A smarter cd command"
 # Installing xclip for terminal copy and paste to clipboard
-install_package "xclip" "XClip: Command-line clipboard utility"
+# install_package "xclip" "XClip: Command-line clipboard utility"
 # Installing font-config
 install_package "fontconfig" "provides available fonts to applications, also configure how fonts get rendered"
 # install fonts-noto-emoji for colored emojies

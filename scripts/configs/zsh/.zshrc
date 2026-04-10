@@ -638,16 +638,6 @@ if [ -f /usr/share/zsh/zshExtras/aliases/aliases.zsh ]; then . /usr/share/zsh/zs
 # Remove text copy/paste highlights
 zle_highlight+=(paste:none)
 
-# Adding extra library functions to ~/.config/zsh/.zshrc:
-if [ -f "$HOME/.local/lib/lib_functions.sh" ]; then
-    export RUNNING_FROM_SCRIPT_RUNNER="false"
-    source "$HOME/.local/lib/lib_functions.sh"
-    
-    # DON'T call cache_sudo here!
-    # Functions will prompt for password on first use
-fi
-
-
 ################################################################################
 #                         SHELL INTEGRATIONS                                   #
 ################################################################################
@@ -687,3 +677,15 @@ source <(fzf --zsh)
 # Zoxide - smarter cd command that learns your habits
 eval "$(zoxide init --cmd cd zsh)"
 
+#### Hyprland, waybar, swaync, and rofi config aliases :
+# Hyprland
+alias hc="cd ~/.config/hypr"
+alias wc="cd ~/.config/waybar"
+# Rofi 
+alias rc="cd ~/.config/rofi"
+alias rt="cd ~/.local/share/rofi/themes"
+# Swaync 
+alias sc="cd ~/.config/swaync"
+# Pywal16
+alias walc="cd ~/.config/wal"
+alias walt="cd ~/.cache/wal"

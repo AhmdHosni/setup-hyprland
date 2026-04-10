@@ -13,9 +13,34 @@ source "$THIS_DIR/libs/lib_functions.sh"
 start_tmux
 cache_sudo
 
-show_title "Installing Hyprland with Required packages"
+#!/bin/bash
 
-install_package "hyprland" "Hyprland: This is The main Window Manager"
+echo "Which Window Manager do you want to install ?"
+echo "  1) hyprland"
+echo "  2) sway"
+# read the input and save it in choice variable
+read -p "Enter choice [1-2]: " choice
+
+case "$choice" in
+1)
+    show_title "Installing Hyprland"
+    install_package "hyprland" "Hyprland: This is The main Window Manager"
+    ;;
+2)
+    show_title "Installing Sway"
+    install_package "sway" "Sway: This is The main Window Manager"
+
+    ;;
+*)
+    echo
+    "Invalid option"
+    exit 1
+    ;;
+esac
+
+show_title "Installing other required packages"
+
+# install_package "hyprland" "Hyprland: This is The main Window Manager"
 
 install_package "kitty" "Kitty Terminal: works best with Hyprland with lots of excellent options"
 

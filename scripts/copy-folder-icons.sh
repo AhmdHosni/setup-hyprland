@@ -17,8 +17,8 @@ cache_sudo
 
 ## Folder icon repo
 ICONS_URL="https://github.com/ahmdhosni/breeze-icons"
-ICONS_DEST="$HOME/.local/share/icons" && mkdir -p "$ICONS_DEST"
-
+ICONS_DEST="$HOME/.local/share/icons"
+mkdir -p "$ICONS_DEST"
 #########################
 # INSTALL ICON THEME
 #########################
