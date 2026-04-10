@@ -70,6 +70,9 @@ install_package "wireless_tools" "Tools allowing to manipulate the Wireless Exte
 
 install_package "xdg-desktop-portal-hyprland" "This handles screen sharing (OBS, Discord), file pickers, and opening links between apps."
 
+install_package "xdg-user-dirs" "Generate default folders in home directory (Desktop, Downloads, etc.)"
+xdg-user-dirs-update
+
 install_package "xdg-desktop-portal-gtk" "Recommended alongside xdg-desktop-portal-hyprland so that apps (like your browser) can open file selection windows."
 
 install_package "xdg-utils" "Command line tools that assist applications with a variety of desktop integration tasks"
@@ -78,6 +81,7 @@ install_package "wl-clipboard" "Wayland version of xclip for copy and paste"
 
 install_package "nwg-look" "Theme and Icon Manager"
 
+install_package "hyprpicker" "A color picker for hyprland"
 install_package "adw-gtk-theme" "Dark theme for Applicaitons"
 
 install_package "imagemagick" "imagemagic (for pywal and works well with kitty)"
